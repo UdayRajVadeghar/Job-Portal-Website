@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
   }
   const buffer = Buffer.concat(chunks);
 
-  const bucketName = 'uday-job-board';
+  const bucketName = 'uday-job-portal';
   await s3Client.send(new PutObjectCommand({
     Bucket: bucketName,
     Key: newFilename,

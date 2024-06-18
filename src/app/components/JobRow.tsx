@@ -16,7 +16,13 @@ export default function JobRow({ jobDoc }: { jobDoc: Job }) {
         </div>
         <div className="flex grow gap-4">
           <div className="content-center w-12 basis-12 shrink-0">
-            <Image className="size-12" src={jobDoc?.jobIcon} alt="" />
+            <Image
+              className="size-12"
+              src={jobDoc?.jobIcon}
+              width={1024}
+              height={1024}
+              alt=""
+            />
           </div>
           <div className="grow sm:flex">
             <div className="grow">
